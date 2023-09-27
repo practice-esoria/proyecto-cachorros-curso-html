@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <title>Los perrolos tucumanos/sanduceros</title>
+    <style>
+      body {
+        font-family: "Lucida Console", "Courier New", monospace;
+        background: linear-gradient(
+          to right,
+          rgb(189, 189, 255),
+          rgb(255, 233, 236)
+        );
+        padding: 0;
+        margin: 0;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+
+      .active {
+        background-color: #04aa6d;
+      }
+
+      h1 {
+        background-color: black;
+        padding: 10px;
+        margin: 0;
+        color: #92a4ff;
+      }
+
+      div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 33vw;
+      }
+
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+
+      .centrado {
+        display: flex;
+        justify-content: center;
+      }
+      .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Los perrolos tucumanos/sanduceros</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="preferencias.html">Preferencias</a></li>
+          <li><a class="active" href="audiovisuales.html">Audiovisuales</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2>Así se ven antes de salir a pasear</h2>
+    <div class="centrado">
+      <video
+        src="/assets/video/pre-paseo.mp4"
+        width="800px"
+        autoplay
+        muted
+      ></video>
+    </div>
+    <div class="centrado">
+      <audio src="/assets/audio/cartoon.mp3" autoplay controls muted></audio>
+    </div>
+
+    <h2>Y más imágenes, porque son hermosos</h2>
+    <section clas="centrado">
+      <div class="gallery">
+        <a href="/assets/img/ash1.jpg" target="_blank"
+          ><img src="/assets/img/ash1.jpg" alt="" width="250px"
+        /></a>
+        <div class="desc">Ash 1</div>
+      </div>
+      <div class="gallery">
+        <a href="/assets/img/luna1.jpg" target="_blank"
+          ><img src="/assets/img/luna1.jpg" alt="" width="250px"
+        /></a>
+        <div class="desc">Luna 1</div>
+      </div>
+      <div class="gallery">
+        <a href="/assets/img/luna2.jpg" target="_blank"
+        ><img src="/assets/img/luna2.jpg" alt="" width="250px"
+        /></a>
+        <div class="desc">Luna 2</div>
+      </div>
+      <div class="gallery">
+        <a href="/assets/img/ash2.jpg" target="_blank"
+        ><img src="/assets/img/ash2.jpg" alt="" width="250px"
+        /></a>
+        <div class="desc">Ash 2</div>
+      </div>
+      <div class="gallery">
+        <a href="/assets/img/ashyluna.jpg" target="_blank"
+          ><img src="/assets/img/ashyluna.jpg" alt="" width="250px"
+        /></a>
+        <div class="desc">Ash y Luna</div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>Derechos reservados &copy; 2023</p>
+    </footer>
+  </body>
+</html>
